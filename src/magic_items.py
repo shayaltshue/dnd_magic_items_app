@@ -8,7 +8,7 @@ class Magic_Items():
 
     def describe(self):
         print(f'{self.name}, price: {self.price}, page: {self.page}, rarity: {self.rarity}, type: {self.item_type}')
-        
+
 
 # Instantiate the items
 spell_scroll_level_0 = Magic_Items('Spell Scroll Level 0', 10, 200, 'Common', 'Consumable')
@@ -25,5 +25,8 @@ magic_items = [
     ammunition_1,
     potion_of_healing,
     quaals_feather_token_anchor,
-    spell_scroll_level_1
+    spell_scroll_level_1,
+    philter_of_love,
+    ammunition_2,
+    potion_of_poison
 ]

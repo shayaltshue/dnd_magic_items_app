@@ -7,7 +7,7 @@ def randomized_loot_by_rarity(num_of_items, rarity, item_type):
     item_type_filter = []
     if item_type != '':
         for item in magic_items:
-            if item.item_type.lower() == item_type:
+            if item.item_type.lower() == item_type.lower():
                 item_type_filter.append(item)
     else:
         item_type_filter = magic_items
@@ -15,7 +15,7 @@ def randomized_loot_by_rarity(num_of_items, rarity, item_type):
     # Create a new list of items filtered by the specified rarity
     rarity_filter = []
     for item in item_type_filter:
-        if item.rarity.lower() == rarity:
+        if item.rarity.lower() == rarity.lower():
             rarity_filter.append(item)
 
     # Select a number of randomized items from the filtered list based on the number specified
@@ -24,8 +24,3 @@ def randomized_loot_by_rarity(num_of_items, rarity, item_type):
         randomized_items.append(random.choice(rarity_filter))
 
     return randomized_items
-
-
-items = randomized_loot_by_rarity(2, 'common', 'consumable')
-for item in items:
-    print(item.describe())

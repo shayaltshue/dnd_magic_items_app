@@ -30,7 +30,7 @@ while(run_app):
         print('-----------------------')
         print('Items:')
         for item in items:
-            print(item.describe())
+            item.describe()
         print('-----------------------')
         print('\n')
 
