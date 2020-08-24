@@ -11,7 +11,7 @@ def randomized_loot_by_rarity(num_of_items, rarity, item_type):
                 item_type_filter = magic_items[key]
     else:
         for key in magic_items:
-            item_type_filter.append(magic_items[key])
+            item_type_filter.extend(magic_items[key])
 
     # Create a new list of items filtered by the specified rarity
     rarity_filter = []

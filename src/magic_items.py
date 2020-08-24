@@ -1,5 +1,5 @@
 class Magic_Item():
-    def __init__(self, name, price, page, rarity, item_type):
+    def __init__(self, name, price, page, rarity):
         self.name = name
         self.price = price
         self.page = page
@@ -9,7 +9,7 @@ class Magic_Item():
         print(f'{self.name}, price: {self.price}, page: {self.page}, rarity: {self.rarity}')
 
 
-# Instantiate the items
+# Instantiating Consumable Items
 spell_scroll_level_0 = Magic_Item('Spell Scroll Level 0', 10, 200, 'Common')
 potion_of_healing = Magic_Item('Potion of Healing', 50, 187, 'Common')
 quaals_feather_token_anchor = Magic_Item("Quaal's Feather Token Anchor", 50, 188, 'Rare')
@@ -81,6 +81,7 @@ rod_of_absorption = Magic_Item('Rod of Absorption', 50000, 195, 'Very Rare')
 talisman_of_ultimate_evil = Magic_Item('Talisman of Ultimate Evil', 61440, 207, 'Legendary')
 robe_of_useful_items = Magic_Item('Robe of Useful Items', 'Items * 5', 195, 'Uncommon')
 
+# Instantiating Combat Items
 armor_1 = Magic_Item('+1 Armor', 1500, 152, 'Rare')
 shield_1 = Magic_Item('+1 Shield', 1500, 200, 'Uncommon')
 weapon_1 = Magic_Item('+1 Weapon', 1000, 213, 'Uncommon')
@@ -93,6 +94,24 @@ weapon_3 = Magic_Item('+3 Weapon', 16000, 213, 'Very Rare')
 adamantine_armor = Magic_Item('Adamantine Armor', 500, 150, 'Uncommon')
 alchemy_jug = Magic_Item('Alchemy Jug', 6000, 150, 'Uncommon')
 
+# Instntiating Non-Combat Items
+
+# Instantiating Summoning Items
+ivory_goat_travail = Magic_Item('Ivory Goat (Travail)', 400, 169, 'Rare')
+golden_lion = Magic_Item('Golden Lion (Each)', 600, 169, 'Rare')
+ivory_goat_traveling = Magic_Item('Ivory Goat (Traveling)', 1000, 169, 'Rare')
+staff_of_the_python = Magic_Item('Staff of the Python', 2000, 204, 'Uncommon')
+onyx_dog = Magic_Item('Onyx Dog', 3000, 170, 'Rare')
+silver_raven = Magic_Item('Silver Raven', 5000, 170, 'Uncommon')
+silver_horn_of_valhalla = Magic_Item('Silver Horn of Valhalla', 5600, 175, 'Rare')
+marble_elephant = Magic_Item('Marble Elephant', 6000, 170, 'Rare')
+bowl_of_commanding_water_elementals = Magic_Item('Bowl of Commanding Water Elements', 8000, 156, 'Rare')
+brazier_of_commanding_fire_elementals = Magic_Item('Brazier of Commanding Fire Elementals', 8000, 156, 'Rare')
+censer_of_controlling_air_elementals = Magic_Item('Censer of Controlling Air Elementals', 8000, 158, 'Rare')
+stone_of_controlling_earth_elmentals = Magic_Item('Stone of Controlling Earth Elementals', 8000, 175, 'Rare')
+brass_horn_of_valhalla = Magic_Item('Brass Horn of Valhalla', 11200, 175, 'Very Rare')
+iron_horn_of_valhalla = Magic_Item('Iron Horn of Valhalla', 14000, 175, 'Legendary')
+ivory_goat_terror = Magic_Item('Ivory Goat (Terror)', 20000, 169, 'Rare')
 
 magic_items = {
     'consumable': [
@@ -181,5 +200,8 @@ magic_items = {
         weapon_3,
         adamantine_armor,
         alchemy_jug
+    ],
+    'summoning': [
+
     ]
 }
