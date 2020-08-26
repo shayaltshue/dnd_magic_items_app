@@ -2,12 +2,41 @@
   <dictionary name="shaya">
     <words>
       <w>adamantine</w>
+      <w>anstruth</w>
+      <w>arachnida</w>
+      <w>bandlore</w>
+      <w>bilarro</w>
+      <w>canaith</w>
+      <w>cittern</w>
+      <w>driftglobe</w>
+      <w>dwarven</w>
+      <w>dwarvenkind</w>
+      <w>efreeti</w>
+      <w>ehlonna</w>
       <w>elementals</w>
+      <w>elvenkind</w>
       <w>etherealness</w>
+      <w>eversmoking</w>
+      <w>fochulan</w>
+      <w>fuirmidh</w>
+      <w>heward</w>
       <w>ioun</w>
       <w>keoghtom</w>
+      <w>kwalish</w>
+      <w>luckstone</w>
+      <w>mage</w>
+      <w>mithral</w>
       <w>nolzur</w>
+      <w>oathbow</w>
+      <w>ollamh</w>
+      <w>periapt</w>
+      <w>polymorph</w>
       <w>quaal</w>
+      <w>rulership</w>
+      <w>spellguard</w>
+      <w>sunblade</w>
+      <w>vorpal</w>
+      <w>winterlands</w>
     </words>
   </dictionary>
 </component>
