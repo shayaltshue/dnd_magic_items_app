@@ -29,8 +29,14 @@ if __name__ == "__main__":
             item_to_search = input(
                 "What item do you want to find? Partial inputs work: "
             )
-            for item in find_item(item_to_search):
-                item.describe()
+            print('=' * 80)
+            search_results = find_item(item_to_search)
+            if search_results:
+                for item in find_item(item_to_search):
+                    item.describe()
+            else:
+                print('No items found :(')
+            print('=' * 80)
         elif user_input.lower() == "loot":
             num_items = int(input("How many items? "))
             rarity = input(
