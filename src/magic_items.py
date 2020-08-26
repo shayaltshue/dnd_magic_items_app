@@ -1,4 +1,4 @@
-class Magic_Item():
+class Magic_Item:
     def __init__(self, name, price, page, rarity):
         self.name = name
         self.price = price
@@ -6,115 +6,383 @@ class Magic_Item():
         self.rarity = rarity
 
     def describe(self):
-        print(f'{self.name}, price: {self.price}, page: {self.page}, rarity: {self.rarity}')
+        print(
+            f"{self.name}, price: {self.price}, page: {self.page}, rarity: {self.rarity}"
+        )
 
 
 # Instantiating Consumable Items
-spell_scroll_level_0 = Magic_Item('Spell Scroll Level 0', 10, 200, 'Common')
-potion_of_healing = Magic_Item('Potion of Healing', 50, 187, 'Common')
-quaals_feather_token_anchor = Magic_Item("Quaal's Feather Token Anchor", 50, 188, 'Rare')
-spell_scroll_level_1 = Magic_Item('Spell Scroll Level 1', 60, 200, 'Common')
-philter_of_love = Magic_Item('Philter of Love', 90, 184, 'Uncommon')
-potion_of_poison = Magic_Item('Potion of Poison', 100, 188, 'Uncommon')
-ammunition_1 = Magic_Item('Ammunition +1 (Each)', 25, 150, 'Uncommon')
-ammunition_2 = Magic_Item('Ammunition +2 (Each)', 100, 150, 'Rare')
-ammunition_3 = Magic_Item('Ammunition +3 (Each)', 400, 150, 'Very Rare')
-dust_of_dryness = Magic_Item('Dust of Drynss (1 pellet)', 120, 166, 'Uncommon')
-elixer_of_health = Magic_Item('Elixir of Health', 120, 168, 'Rare')
-keoghtoms_ointment = Magic_Item("Keoghtom's Ointment", 120, 179, 'Uncommon')
-spell_scroll_level_2 = Magic_Item('Spell Scroll Level 2', 120, 200, 'Uncommon')
-potion_of_fire_breath = Magic_Item('Potion of Fire Breath', 150, 187, 'Uncommon')
-potion_of_greater_healing = Magic_Item('Potion of Greater Healing', 150, 187, 'Uncommon')
-potion_of_climbing = Magic_Item('Potion of Climbing', 180, 187, 'Common')
-potion_of_heroism = Magic_Item('Potion of Heroism', 180, 187, 'Common')
-potion_of_Invisibility = Magic_Item('Potion of Invisibility', 180, 188, 'Very Rare')
-potion_of_mind_reading = Magic_Item('Potion of Mind Reading', 180, 188, 'Rare')
-potion_of_water_breathing = Magic_Item('Potion of Water Breathing', 180, 188, 'Uncommon')
-scroll_of_protection = Magic_Item('Scroll of Protection', 180, 199, 'Rare')
-nolzurs_marvelous_pigments = Magic_Item("Nolzur's Marvelous Pigments", 200, 183, 'Very Rare')
-potion_of_animal_friendship = Magic_Item('Potion of Animal Friendship', 200, 187, 'Uncommon')
-spell_scroll_level_3 = Magic_Item('Spell Scroll Level 3', 200, 200, 'Uncommon')
-quaals_feather_token_fan = Magic_Item("Quaal's Feather Token Fan", 250, 188, 'Rare')
-quaals_feather_token_whip = Magic_Item("Quaal's Feather Token Whip", 250, 188, 'Rare')
-potion_of_diminution = Magic_Item('Potion of Diminution', 270, 187, 'Rare')
-potion_of_growth = Magic_Item('Potion of Growth', 270, 187, 'Uncommon')
-dust_of_disappearance = Magic_Item('Dust of Disappearance', 300, 166, 'Uncommon')
-necklace_of_fireballs_1 = Magic_Item('Necklace of Fireballs (One Bead)', 300, 182, 'Rare')
-potion_of_gaseous_form = Magic_Item('Potion of Gaseous Form', 300, 187, 'Rare')
-potion_of_resistance = Magic_Item('Potion of Resistance', 300, 187, 'Uncommon')
-universal_solvent = Magic_Item('Universal Solvent', 300, 209, 'Legendary')
-spell_scroll_level_4 = Magic_Item('Spell Scroll Level 4', 320, 200, 'Rare')
-potion_of_speed = Magic_Item('Potion of Speed', 450, 174, 'Rare')
-sovereign_glue = Magic_Item('Sovereign Glue', 400, 200, 'Legendary')
-horn_of_blasting = Magic_Item('Horn of Blasting', 450, 174, 'Rare')
-potion_of_superior_healing = Magic_Item('Potion of Superior Healing', 450, 187, 'Very Rare')
-dust_of_sneezing_and_choking = Magic_Item('Potion of Sneezing and Choking', 450, 187, 'Very Rare')
-necklace_of_fireballs_2 = Magic_Item('Necklace of Fireballs (Two Beads)', 480, 182, 'Rare')
-oil_of_slipperiness = Magic_Item('Oil of Slipperiness', 480, 184, 'Uncommon')
-potion_of_flying = Magic_Item('Potion of Flying', 500, 187, 'Very Rare')
-arrow_of_slaying = Magic_Item('Arrow of Slaying (Each)', 600, 152, 'Very Rare')
-spell_scroll_level_5 = Magic_Item('Spell Scroll Level 5', 640, 200, 'Rare')
-bead_of_force = Magic_Item('Bead of Force', 960, 167, 'Rare')
-elemental_gem = Magic_Item('Elemental Gem', 690, 167, 'Uncommon')
-necklace_of_fireballs_3 = Magic_Item('Necklace of Fireballs (Three Beads', 960, 182, 'Rare')
-potion_of_clairvoyance = Magic_Item('Potion of Clairvoyance', 960, 187, 'Rare')
-potion_of_vitality = Magic_Item('Potion of Vitality', 960, 188, 'Very Rare')
-spell_scroll_level_6 = Magic_Item('Spell Scroll Level 6', 1280, 200, 'Very Rare')
-potion_of_supreme_healing = Magic_Item('Potion of Supreme Healing', 1350, 187, 'Very Rare')
-chime_of_opening = Magic_Item('Chime of Opening', 1500, 158, 'Rare')
-necklace_of_fireballs_4 = Magic_Item('Necklace of Fireballs (Four Beads)', 1600, 182, 'Rare')
-oil_of_etherealness = Magic_Item('Oil of Etherealness', 1920, 183, 'Rare')
-ioun_stone_absorption = Magic_Item('Ioun Stone Absorption', 2400, 177, 'Very Rare')
-spell_scroll_level_7 = Magic_Item('Spell Scroll Level 7', 2560, 200, 'Very Rare')
-quaals_feather_token_bird = Magic_Item("Quaal's Feather Token Bird", 3000, 188, 'Rare')
-quaals_feather_token_swan_boat = Magic_Item("Quaal's Feather Token Swan Boat", 3000, 188, 'Rare')
-oil_of_sharpness = Magic_Item('Oil of Sharpness', 32000, 184, 'Very Rare')
-necklace_of_fireballs_5 = Magic_Item('Necklace of Fireballs (Five Beads)', 3840, 182, 'Rare')
-potion_of_invulnerability = Magic_Item('Potion of Invulnerability', 3840, 188, 'Rare')
-gem_of_brightness = Magic_Item('Gem of Brightness', 5000, 171, 'Uncommon')
-spell_scroll_level_8 = Magic_Item('Spell Scroll Level 8', 5120, 200, 'Very Rare')
-deck_of_illusions = Magic_Item('Deck of Illusions', 6120, 161, 'Uncommon')
-necklace_of_fireballs_6 = Magic_Item('Necklace of Fireballs (6 Beads)', 7680, 182, 'Rare')
-spell_scroll_level_9 = Magic_Item('Spell Scroll Level 9', 10240, 200, 'Legendary')
-ioun_stone_greater_absorption = Magic_Item('Ioun Stone Greater Absorption', 31000, 177, 'Legendary')
-rod_of_absorption = Magic_Item('Rod of Absorption', 50000, 195, 'Very Rare')
-talisman_of_ultimate_evil = Magic_Item('Talisman of Ultimate Evil', 61440, 207, 'Legendary')
-robe_of_useful_items = Magic_Item('Robe of Useful Items', 'Items * 5', 195, 'Uncommon')
+spell_scroll_level_0 = Magic_Item("Spell Scroll Level 0", 10, 200, "Common")
+potion_of_healing = Magic_Item("Potion of Healing", 50, 187, "Common")
+quaals_feather_token_anchor = Magic_Item(
+    "Quaal's Feather Token Anchor", 50, 188, "Rare"
+)
+spell_scroll_level_1 = Magic_Item("Spell Scroll Level 1", 60, 200, "Common")
+philter_of_love = Magic_Item("Philter of Love", 90, 184, "Uncommon")
+potion_of_poison = Magic_Item("Potion of Poison", 100, 188, "Uncommon")
+ammunition_1 = Magic_Item("Ammunition +1 (Each)", 25, 150, "Uncommon")
+ammunition_2 = Magic_Item("Ammunition +2 (Each)", 100, 150, "Rare")
+ammunition_3 = Magic_Item("Ammunition +3 (Each)", 400, 150, "Very Rare")
+dust_of_dryness = Magic_Item("Dust of Drynss (1 pellet)", 120, 166, "Uncommon")
+elixer_of_health = Magic_Item("Elixir of Health", 120, 168, "Rare")
+keoghtoms_ointment = Magic_Item("Keoghtom's Ointment", 120, 179, "Uncommon")
+spell_scroll_level_2 = Magic_Item("Spell Scroll Level 2", 120, 200, "Uncommon")
+potion_of_fire_breath = Magic_Item("Potion of Fire Breath", 150, 187, "Uncommon")
+potion_of_greater_healing = Magic_Item(
+    "Potion of Greater Healing", 150, 187, "Uncommon"
+)
+potion_of_climbing = Magic_Item("Potion of Climbing", 180, 187, "Common")
+potion_of_heroism = Magic_Item("Potion of Heroism", 180, 187, "Common")
+potion_of_Invisibility = Magic_Item("Potion of Invisibility", 180, 188, "Very Rare")
+potion_of_mind_reading = Magic_Item("Potion of Mind Reading", 180, 188, "Rare")
+potion_of_water_breathing = Magic_Item(
+    "Potion of Water Breathing", 180, 188, "Uncommon"
+)
+scroll_of_protection = Magic_Item("Scroll of Protection", 180, 199, "Rare")
+nolzurs_marvelous_pigments = Magic_Item(
+    "Nolzur's Marvelous Pigments", 200, 183, "Very Rare"
+)
+potion_of_animal_friendship = Magic_Item(
+    "Potion of Animal Friendship", 200, 187, "Uncommon"
+)
+spell_scroll_level_3 = Magic_Item("Spell Scroll Level 3", 200, 200, "Uncommon")
+quaals_feather_token_fan = Magic_Item("Quaal's Feather Token Fan", 250, 188, "Rare")
+quaals_feather_token_whip = Magic_Item("Quaal's Feather Token Whip", 250, 188, "Rare")
+potion_of_diminution = Magic_Item("Potion of Diminution", 270, 187, "Rare")
+potion_of_growth = Magic_Item("Potion of Growth", 270, 187, "Uncommon")
+dust_of_disappearance = Magic_Item("Dust of Disappearance", 300, 166, "Uncommon")
+necklace_of_fireballs_1 = Magic_Item(
+    "Necklace of Fireballs (One Bead)", 300, 182, "Rare"
+)
+potion_of_gaseous_form = Magic_Item("Potion of Gaseous Form", 300, 187, "Rare")
+potion_of_resistance = Magic_Item("Potion of Resistance", 300, 187, "Uncommon")
+universal_solvent = Magic_Item("Universal Solvent", 300, 209, "Legendary")
+spell_scroll_level_4 = Magic_Item("Spell Scroll Level 4", 320, 200, "Rare")
+potion_of_speed = Magic_Item("Potion of Speed", 450, 174, "Rare")
+sovereign_glue = Magic_Item("Sovereign Glue", 400, 200, "Legendary")
+horn_of_blasting = Magic_Item("Horn of Blasting", 450, 174, "Rare")
+potion_of_superior_healing = Magic_Item(
+    "Potion of Superior Healing", 450, 187, "Very Rare"
+)
+dust_of_sneezing_and_choking = Magic_Item(
+    "Potion of Sneezing and Choking", 450, 187, "Very Rare"
+)
+necklace_of_fireballs_2 = Magic_Item(
+    "Necklace of Fireballs (Two Beads)", 480, 182, "Rare"
+)
+oil_of_slipperiness = Magic_Item("Oil of Slipperiness", 480, 184, "Uncommon")
+potion_of_flying = Magic_Item("Potion of Flying", 500, 187, "Very Rare")
+arrow_of_slaying = Magic_Item("Arrow of Slaying (Each)", 600, 152, "Very Rare")
+spell_scroll_level_5 = Magic_Item("Spell Scroll Level 5", 640, 200, "Rare")
+bead_of_force = Magic_Item("Bead of Force", 960, 167, "Rare")
+elemental_gem = Magic_Item("Elemental Gem", 690, 167, "Uncommon")
+necklace_of_fireballs_3 = Magic_Item(
+    "Necklace of Fireballs (Three Beads", 960, 182, "Rare"
+)
+potion_of_clairvoyance = Magic_Item("Potion of Clairvoyance", 960, 187, "Rare")
+potion_of_vitality = Magic_Item("Potion of Vitality", 960, 188, "Very Rare")
+spell_scroll_level_6 = Magic_Item("Spell Scroll Level 6", 1280, 200, "Very Rare")
+potion_of_supreme_healing = Magic_Item(
+    "Potion of Supreme Healing", 1350, 187, "Very Rare"
+)
+chime_of_opening = Magic_Item("Chime of Opening", 1500, 158, "Rare")
+necklace_of_fireballs_4 = Magic_Item(
+    "Necklace of Fireballs (Four Beads)", 1600, 182, "Rare"
+)
+oil_of_etherealness = Magic_Item("Oil of Etherealness", 1920, 183, "Rare")
+ioun_stone_absorption = Magic_Item("Ioun Stone Absorption", 2400, 177, "Very Rare")
+spell_scroll_level_7 = Magic_Item("Spell Scroll Level 7", 2560, 200, "Very Rare")
+quaals_feather_token_bird = Magic_Item("Quaal's Feather Token Bird", 3000, 188, "Rare")
+quaals_feather_token_swan_boat = Magic_Item(
+    "Quaal's Feather Token Swan Boat", 3000, 188, "Rare"
+)
+oil_of_sharpness = Magic_Item("Oil of Sharpness", 32000, 184, "Very Rare")
+necklace_of_fireballs_5 = Magic_Item(
+    "Necklace of Fireballs (Five Beads)", 3840, 182, "Rare"
+)
+potion_of_invulnerability = Magic_Item("Potion of Invulnerability", 3840, 188, "Rare")
+gem_of_brightness = Magic_Item("Gem of Brightness", 5000, 171, "Uncommon")
+spell_scroll_level_8 = Magic_Item("Spell Scroll Level 8", 5120, 200, "Very Rare")
+deck_of_illusions = Magic_Item("Deck of Illusions", 6120, 161, "Uncommon")
+necklace_of_fireballs_6 = Magic_Item(
+    "Necklace of Fireballs (6 Beads)", 7680, 182, "Rare"
+)
+spell_scroll_level_9 = Magic_Item("Spell Scroll Level 9", 10240, 200, "Legendary")
+ioun_stone_greater_absorption = Magic_Item(
+    "Ioun Stone Greater Absorption", 31000, 177, "Legendary"
+)
+rod_of_absorption = Magic_Item("Rod of Absorption", 50000, 195, "Very Rare")
+talisman_of_ultimate_evil = Magic_Item(
+    "Talisman of Ultimate Evil", 61440, 207, "Legendary"
+)
+robe_of_useful_items = Magic_Item("Robe of Useful Items", "Items * 5", 195, "Uncommon")
 
 # Instantiating Combat Items
-armor_1 = Magic_Item('+1 Armor', 1500, 152, 'Rare')
-shield_1 = Magic_Item('+1 Shield', 1500, 200, 'Uncommon')
-weapon_1 = Magic_Item('+1 Weapon', 1000, 213, 'Uncommon')
-armor_2 = Magic_Item('+2 Armor', 6000, 152, 'Very Rare')
-shield_2 = Magic_Item('+2 Shield', 6000, 200, 'Rare')
-weapon_2 = Magic_Item('+2 Weapon', 4000, 213, 'Rare')
-armor_3 = Magic_Item('+3 Armor', 24000, 152, 'Legendary')
-shield_3 = Magic_Item('+3 Shield', 24000, 200, 'Very Rare')
-weapon_3 = Magic_Item('+3 Weapon', 16000, 213, 'Very Rare')
-adamantine_armor = Magic_Item('Adamantine Armor', 500, 150, 'Uncommon')
-alchemy_jug = Magic_Item('Alchemy Jug', 6000, 150, 'Uncommon')
+vicious_weapon = Magic_Item("Vicious Weapon", 350, 209, "Rare")
+adamantine_armor = Magic_Item("Adamantine Armor", 500, 150, "Uncommon")
+mithiral_armor = Magic_Item("Mithral Armor", 800, 182, "Uncommon")
+weapon_1 = Magic_Item("+1 Weapon", 1000, 213, "Uncommon")
+sword_of_life_stealing = Magic_Item("Sword of Life-Stealing", 1000, 206, "Rare")
+ioun_stone_protection = Magic_Item("Ioun Stone Protection", 1200, 177, "Rare")
+wand_of_the_war_mage_1 = Magic_Item("Wand of the War Mage +1", 1200, 212, "Uncommon")
+bracers_of_archery = Magic_Item("Bracers of Archery", 1500, 156, "Uncommon")
+circlet_of_blasting = Magic_Item("Circlet of Blasting", 1500, 158, "Uncommon")
+javelin_of_lightning = Magic_Item("Javelin of Lightning", 1500, 178, "Uncommon")
+prayer_bead_smiting = Magic_Item("Prayer Bead - Smiting", 1500, 182, "Rare")
+wind_fan = Magic_Item("Wind Fan", 1500, 213, "Uncommon")
+sword_of_sharpness = Magic_Item("Sword of Sharpness", 1700, 206, "Rare")
+staff_of_the_adder = Magic_Item("Staff of the Adder", 1800, 203, "Uncommon")
+dancing_sword = Magic_Item("Dancing Sword", 2000, 160, "Very Rare")
+glamoured_studded_leather = Magic_Item("Glamoured Studded Leather", 2000, 172, "Rare")
+pipes_of_the_sewers = Magic_Item("Pipes of the Sewers", 2000, 185, "Uncommon")
+prayer_bead_bless = Magic_Item("Prayer Bead - Bless", 2000, 182, "Rare")
+saddle_of_the_cavalier = Magic_Item("Saddle of the Cavalier", 2000, 199, "Uncommon")
+sword_of_wounding = Magic_Item("Sword of Wounding", 2000, 207, "Rare")
+frost_brand = Magic_Item("Frost Brand", 2200, 171, "Very Rare")
+dagger_of_venom = Magic_Item("Dagger of Venom", 2500, 160, "Rare")
+gloves_of_missile_snaring = Magic_Item(
+    "Gloves of Missile Snaring", 3000, 172, "Uncommon"
+)
+ioun_stone_agility = Magic_Item("Ioun Stone Agility", 3000, 177, "Very Rare")
+ioun_stone_fortitude = Magic_Item("Ioun Stone Fortitude", 3000, 177, "Very Rare")
+ioun_stone_insight = Magic_Item("Ioun Stone Insight", 3000, 177, "Very Rare")
+ioun_stone_intellect = Magic_Item("Ioun Stone Intellect", 3000, 177, "Very Rare")
+ioun_stone_leadership = Magic_Item("Ioun Stone Leadership", 3000, 177, "Very Rare")
+ioun_stone_strength = Magic_Item("Ioun Stone Strength", 3000, 177, "Very Rare")
+staff_of_withering = Magic_Item("Staff of Withering", 3000, 205, "Rare")
+cloak_of_protection = Magic_Item("Cloak of Protection", 3500, 159, "Uncommon")
+oathbow = Magic_Item("Oathbow", 3500, 183, "Very Rare")
+ring_of_protection = Magic_Item("Ring of Protection", 3500, 191, "Rare")
+weapon_2 = Magic_Item("+2 Weapon", 4000, 213, "Rare")
+boots_of_speed = Magic_Item("Boots of Speed", 4000, 155, "Rare")
+dragon_scale_mail = Magic_Item("Dragon Scale Mail", 4000, 165, "Very Rare")
+elven_chain = Magic_Item("Elven Chain", 4000, 168, "Rare")
+ioun_stone_regeneration = Magic_Item("Ioun Stone Regeneration", 4000, 177, "Legendary")
+iron_bands_of_bilarro = Magic_Item("Iron Bands of Bilarro", 4000, 177, "Rare")
+prayer_bead_curing = Magic_Item("Prayer Bead - Curing", 4000, 182, "Rare")
+rope_of_entanglement = Magic_Item("Rope of Entanglement", 4000, 197, "Rare")
+wand_of_enemy_detection = Magic_Item("Wand of Enemy Detection", 4000, 210, "Rare")
+luckstone = Magic_Item("Luckstone", 4200, 205, "Uncommon")
+wand_of_the_war_mage_2 = Magic_Item("Wand of the War Mage +2", 4800, 212, "Rare")
+flame_tongue = Magic_Item("Flame Tongue", 5000, 170, "Rare")
+periapt_of_wound_closure = Magic_Item("Periapt of Wound Closure", 5000, 184, "Uncommon")
+ring_of_evasion = Magic_Item("Ring of Evasion", 5000, 191, "Rare")
+ring_of_the_ram = Magic_Item("Ring of the Ram", 5000, 193, "Rare")
+tentacle_rod = Magic_Item("Tentacle Rod", 5000, 208, "Rare")
+animated_shield = Magic_Item("Animated Shield", 6000, 151, "Very Rare")
+armor_of_resistance = Magic_Item("Armor of Resistance", 6000, 152, "Rare")
+arrow_catching_shield = Magic_Item("Arrow-Catching Shield", 6000, 152, "Rare")
+belt_of_dwarvenkind = Magic_Item("Belt of Dwarvenkind", 6000, 155, "Rare")
+bracers_of_defence = Magic_Item("Bracers of Defense", 6000, 156, "Rare")
+ioun_stone_reserve = Magic_Item("Ioun Stone Reserve", 6000, 177, "Rare")
+pearl_of_power = Magic_Item("Pearl of Power", 6000, 184, "Uncommon")
+pipes_of_haunting = Magic_Item("Pipes of Haunting", 6000, 185, "Uncommon")
+ring_of_resistance = Magic_Item("Ring of Resistance", 6000, 192, "Rare")
+robe_of_scintillating_colors = Magic_Item(
+    "Robe of Scintillating Colors", 6000, 194, "Very Rare"
+)
+scimitar_of_speed = Magic_Item("Scimitar of Speed", 6000, 199, "Very Rare")
+shield_of_missile_attraction = Magic_Item(
+    "Shield of Missile Attraction", 6000, 200, "Rare"
+)
+giant_slayer = Magic_Item("Giant Slayer", 7000, 172, "Rare")
+mace_of_smiting = Magic_Item("Mace of Smiting", 7000, 179, "Rare")
+brooch_of_shielding = Magic_Item("Brooch of Shielding", 7500, 156, "Uncommon")
+amulet_of_health = Magic_Item("Amulet of Health", 8000, 150, "Rare")
+dragon_slayer = Magic_Item("Dragon Slayer", 8000, 166, "Rare")
+gauntlets_of_ogre_power = Magic_Item("Gauntlets of Ogre Power", 8000, 171, "Uncommon")
+headband_of_intellect = Magic_Item("Headband of Intellect", 8000, 173, "Uncommon")
+mace_of_disruption = Magic_Item("Mace of Disruption", 8000, 179, "Rare")
+mace_of_terror = Magic_Item("Mace of Terror", 8000, 180, "Rare")
+nine_lives_stealer = Magic_Item(
+    "Nine Lives Stealer (Fully Charged)", 8000, 183, "Very Rare"
+)
+wand_of_magic_missile = Magic_Item("Wand of Magic Missiles", 8000, 211, "Uncommon")
+wand_of_web = Magic_Item("Wand of Web", 8000, 212, "Uncommon")
+staff_of_thunder_and_lightning = Magic_Item(
+    "Staff of Thunder and Lightning", 10000, 204, "Very Rare"
+)
+wand_of_blinding = Magic_Item("Wand of Binding", 10000, 209, "Rare")
+wand_of_fear = Magic_Item("Wand of Fear", 10000, 210, "Rare")
+ioun_stone_awareness = Magic_Item("Ioun Stone Awareness", 12000, 177, "Rare")
+rod_of_the_pact_keeper = Magic_Item("Rod of the Pact Keeper +1", 12000, 197, "Rare")
+staff_of_charming = Magic_Item("Staff of Charming", 12000, 201, "Rare")
+sunblade = Magic_Item("Sunblade", 12000, 205, "Rare")
+staff_of_healing = Magic_Item("Staff of Healing", 13000, 202, "Rare")
+ring_of_shooting_stars = Magic_Item("Ring of Shooting Stars", 14000, 192, "Very Rare")
+ioun_stone_mastery = Magic_Item("Ioun Stone Mastery", 15000, 177, "Legendary")
+weapon_3 = Magic_Item("+3 Weapon", 16000, 213, "Very Rare")
+hammer_of_thunderbolts = Magic_Item("Hammer of Thunderbolts", 16000, 173, "Legendary")
+rod_of_the_pact_keeper_2 = Magic_Item("Rod of the Pact Keeper +2", 16000, 197, "Rare")
+staff_of_fire = Magic_Item("Staff of Fire", 16000, 201, "Very Rare")
+staff_of_swarming_insects = Magic_Item("Staff of Swarming Insects", 16000, 203, "Rare")
+wand_of_paralysis = Magic_Item("Wand of Paralysis", 16000, 211, "Rare")
+ring_of_fire_elemental_command = Magic_Item(
+    "Ring of Fire Elemental Command", 17000, 190, "Legendary"
+)
+dwarven_thrower = Magic_Item("Dwarven Thrower", 18000, 167, "Very Rare")
+wand_of_the_war_mage_3 = Magic_Item("Wand of the War Mage +3", 19200, 212, "Very Rare")
+efreeti_chain = Magic_Item("Efreeti Chain", 20000, 167, "Legendary")
+ring_of_free_action = Magic_Item("Ring of Free Action", 20000, 191, "Rare")
+sentinel_shield = Magic_Item("Sentinel Shield", 20000, 199, "Uncommon")
+staff_of_striking = Magic_Item("Staff of Striking", 21000, 203, "Very Rare")
+ring_of_spell_storing = Magic_Item("Ring of Spell Storing", 24000, 192, "Rare")
+vorporal_sword = Magic_Item("Vorpal Sword", 24000, 209, "Legendary")
+ring_of_water_elemental_command = Magic_Item(
+    "Ring of Water Elemental Command", 25000, 191, "Legendary"
+)
+rod_of_alertness = Magic_Item("Rod of Alertness", 25000, 195, "Very Rare")
+staff_of_frost = Magic_Item("Staff of Frost", 26000, 201, "Very Rare")
+instrument_of_the_bards_fochulan_bandlore = Magic_Item(
+    "Instrument of the Bards - Fochulan Bandlore", 26500, 176, "Uncommon"
+)
+instrument_of_the_bards_mac_fuirmidh_cittern = Magic_Item(
+    "Instrument of the Bards - Mac-Fuirmidh Cittern", 27000, 176, "Uncommon"
+)
+rod_of_lordly_might = Magic_Item("Rod of Lordly Might", 28000, 195, "Legendary")
+rod_of_the_pact_keeper_3 = Magic_Item(
+    "Rod of the Pact Keeper +3", 28000, 197, "Very Rare"
+)
+instrument_of_the_bards_doss_lute = Magic_Item(
+    "Instrument of the Bards - Doss Lute", 28500, 176, "Uncommon"
+)
+instrument_of_the_bards_canaith_mandolin = Magic_Item(
+    "Instrument of the Bards - Canaith Mandolin", 30000, 176, "Rare"
+)
+mantle_of_spell_resistance = Magic_Item(
+    "Mantle of Spell Resistance", 30000, 180, "Rare"
+)
+ring_of_spell_turning = Magic_Item("Ring of Spell Turning", 30000, 193, "Legendary")
+prayer_bead_favor = Magic_Item("Prayer Bead - Favor", 32000, 182, "Rare")
+wand_of_fireballs = Magic_Item("Wand of Fireballs", 32000, 210, "Rare")
+wand_of_lightning_bolts = Magic_Item("Wand of Lightning Bolts", 32000, 211, "Rare")
+wand_of_polymorph = Magic_Item("Wand of Polymorph", 32000, 211, "Very Rare")
+instrument_of_the_bards_cli_lyre = Magic_Item(
+    "Instrument of the Bards - Cli Lyre", 35000, 176, "Rare"
+)
+scarab_of_protection = Magic_Item("Scarab of Protection", 36000, 199, "Legendary")
+sword_of_answering = Magic_Item("Sword of Answering", 36000, 206, "Legendary")
+staff_of_the_woodlands = Magic_Item("Staff of the Woodlands", 44000, 204, "Rare")
+spellguard_shield = Magic_Item("Spellguard Shield", 50000, 201, "Very Rare")
+cloak_of_displacement = Magic_Item("Cloak of Displacement", 60000, 158, "Rare")
+robe_of_stars = Magic_Item("Robe of Stars", 60000, 194, "Very Rare")
+weapon_of_warning = Magic_Item("Weapon of Warning", 60000, 213, "Uncommon")
+prayer_bead_wind_walking = Magic_Item("Prayer Bead - Wind Walking", 96000, 182, "Rare")
+instrument_of_the_bards_anstruth_harp = Magic_Item(
+    "Instrument of the Bards - Anstruth Harp", 109000, 176, "Very Rare"
+)
+instrument_of_the_bards_ollamh_harp = Magic_Item(
+    "Instrument of the Bards - Ollamh Harp", 125000, 176, "Legendary"
+)
+prayer_bead_summons = Magic_Item("Prayer Bead - Summons", 128000, 182, "Rare")
+holy_avenger = Magic_Item("Holy Avenger", 165000, 174, "Legendary")
 
-# Instntiating Non-Combat Items
+# Instantiating Non-Combat Items
+helm_of_comprehend_languages = Magic_Item(
+    "Helm of Comprehend Languages", 500, 173, "Uncommon"
+)
+driftglobe = Magic_Item("Driftglobe", 750, 166, "Uncommon")
+trident_of_fish_command = Magic_Item("Trident of Fish Command", 800, 209, "Uncommon")
+cap_of_water_breathing = Magic_Item("Cap of Water Breathing", 1000, 157, "Uncommon")
+eversmoking_bottle = Magic_Item("Eversmoking Bottle", 1000, 168, "Uncommon")
+quiver_of_ehlonna = Magic_Item("Quiver of Ehlonna", 1000, 189, "Uncommon")
+ioun_stone_sustenance = Magic_Item("Ioun Stone Sustenance", 1000, 177, "Rare")
+ring_of_warmth = Magic_Item("Ring of Warmth", 1000, 193, "Uncommon")
+goggles_of_night = Magic_Item("Goggles of Night", 1500, 172, "Uncommon")
+horseshoes_of_the_zephyr = Magic_Item(
+    "Horseshoes of the Zephyr", 1500, 175, "Very Rare"
+)
+mariners_armor = Magic_Item("Mariner's Armor", 1500, 181, "Uncommon")
+necklace_of_adaptation = Magic_Item("Necklace of Adaptation", 1500, 182, "Uncommon")
+ring_of_water_walking = Magic_Item("Ring of Water Walking", 1500, 193, "Uncommon")
+wand_of_magic_detection = Magic_Item("Wand of Magic Detection", 1500, 211, "Uncommon")
+wand_of_secrets = Magic_Item("Wand of Secrets", 1500, 211, "Uncommon")
+gloves_of_swimming_and_climbing = Magic_Item(
+    "Gloves of Swimming and Climbing", 2000, 172, "uncommon"
+)
+hewards_handy_haversack = Magic_Item("Heward's Handy Haversack", 2000, 174, "Rare")
+rope_of_climbing = Magic_Item("Rope of Climbing", 2000, 197, "Uncommon")
+ring_of_feather_falling = Magic_Item("Ring of Feather Falling", 2000, 191, "Rare")
+boots_of_elvenking = Magic_Item("Boots of Elvenkind", 2500, 155, "Uncommon")
+eyes_of_minute_seeing = Magic_Item("Eyes of Minute Seeing", 2500, 155, "Uncommon")
+eyes_of_the_eagle = Magic_Item("Eyes of the Eagle", 2500, 168, "Uncommon")
+ring_of_jumping = Magic_Item("Ring of Jumping", 2500, 191, "Uncommon")
+dimensional_shackles = Magic_Item("Dimensional Shackles", 3000, 165, "Rare")
+eyes_of_charming = Magic_Item("Eyes of Charming", 3000, 168, "Uncommon")
+medallion_of_thoughts = Magic_Item("Medallion of Thoughts", 3000, 181, "Uncommon")
+ring_of_swimming = Magic_Item("Ring of Swimming", 3000, 193, "Uncommon")
+bag_of_holding = Magic_Item("Bag of Holding", 4000, 153, "Uncommon")
+boots_of_levitation = Magic_Item("Boots of Levitation", 4000, 153, "Rare")
+ring_of_animal_influence = Magic_Item("Ring of Animal Influence", 4000, 189, "Rare")
+boots_of_striding_and_springing = Magic_Item(
+    "Boots of Striding and Springing", 5000, 156, "Uncommon"
+)
+cloak_of_arachnida = Magic_Item("Cloak of Arachnida", 5000, 156, "Uncommon")
+cloak_of_elvenking = Magic_Item("Cloak of Elvenkind", 5000, 158, "Uncommon")
+gloves_of_thievery = Magic_Item("Gloves of Thievery", 5000, 172, "Uncommon")
+hat_of_disguise = Magic_Item("Hat of Disguise", 5000, 173, "Uncommon")
+horseshoes_of_speed = Magic_Item("Horseshoes of Speed", 5000, 175, "Rare")
+immovable_rod = Magic_Item("Immovable Rod", 5000, 175, "Uncommon")
+lantern_of_revealing = Magic_Item("Lantern of Revealing", 5000, 179, "Uncommon")
+periapt_of_health = Magic_Item("Periapt of Health", 5000, 185, "Uncommon")
+periapt_of_proof_against_poison = Magic_Item(
+    "Periapt of Proof Against Poison", 5000, 184, "Rare"
+)
+slippers_of_spider_climbing = Magic_Item(
+    "Slippers of Spider Climbing", 5000, 200, "Uncommon"
+)
+cloak_of_the_bat = Magic_Item("Cloak of the Bat", 6000, 159, "Rare")
+cloak_of_the_manta_ray = Magic_Item("Cloak of the Manta Ray", 6000, 159, "Uncommon")
+ring_of_x_ray_vision = Magic_Item("Ring of X-Ray Vision", 6000, 193, "Rare")
+cape_of_the_mountebank = Magic_Item("Cape of the Mountebank", 8000, 157, "Rare")
+portable_hole = Magic_Item("Portable Hole", 8000, 185, "Rare")
+apparatus_of_kwalish = Magic_Item("Apparatus of Kwalish", 10000, 151, "Legendary")
+boots_of_the_winterlands = Magic_Item(
+    "Boots of the Winterlands", 10000, 156, "Uncommon"
+)
+folding_boat = Magic_Item("Folding Boat", 10000, 170, "Rare")
+ring_of_invisibility = Magic_Item("Ring of Invisibility", 10000, 191, "Legendary")
+helm_of_telepathy = Magic_Item("Helm of Telepathy", 12000, 174, "Uncommon")
+cube_of_force = Magic_Item("Cube of Force", 16000, 159, "Rare")
+ring_of_mind_shielding = Magic_Item("Ring of Mind Shielding", 16000, 191, "Uncommon")
+rod_of_rulership = Magic_Item("Rod of Rulership", 16000, 197, "Rare")
+mirror_of_life_trapping = Magic_Item("Mirror of Life Trapping", 18000, 181, "Very Rare")
+amulet_of_proof_against_detection_and_location = Magic_Item(
+    "amulet_of_proof_against_detection_and_location", 20000, 150, "Uncommon"
+)
+robe_of_eyes = Magic_Item("Robe of Eyes", 30000, 193, "Rare")
+gem_of_seeing = Magic_Item("Gem of Seeing", 32000, 193, "Rare")
+plate_armor_of_etherealness = Magic_Item(
+    "Plate Armor of Etherealness", 48000, 185, "Legendary"
+)
 
 # Instantiating Summoning Items
-ivory_goat_travail = Magic_Item('Ivory Goat (Travail)', 400, 169, 'Rare')
-golden_lion = Magic_Item('Golden Lion (Each)', 600, 169, 'Rare')
-ivory_goat_traveling = Magic_Item('Ivory Goat (Traveling)', 1000, 169, 'Rare')
-staff_of_the_python = Magic_Item('Staff of the Python', 2000, 204, 'Uncommon')
-onyx_dog = Magic_Item('Onyx Dog', 3000, 170, 'Rare')
-silver_raven = Magic_Item('Silver Raven', 5000, 170, 'Uncommon')
-silver_horn_of_valhalla = Magic_Item('Silver Horn of Valhalla', 5600, 175, 'Rare')
-marble_elephant = Magic_Item('Marble Elephant', 6000, 170, 'Rare')
-bowl_of_commanding_water_elementals = Magic_Item('Bowl of Commanding Water Elementals', 8000, 156, 'Rare')
-brazier_of_commanding_fire_elementals = Magic_Item('Brazier of Commanding Fire Elementals', 8000, 156, 'Rare')
-censer_of_controlling_air_elementals = Magic_Item('Censer of Controlling Air Elementals', 8000, 158, 'Rare')
-stone_of_controlling_earth_elmentals = Magic_Item('Stone of Controlling Earth Elementals', 8000, 175, 'Rare')
-brass_horn_of_valhalla = Magic_Item('Brass Horn of Valhalla', 11200, 175, 'Very Rare')
-iron_horn_of_valhalla = Magic_Item('Iron Horn of Valhalla', 14000, 175, 'Legendary')
-ivory_goat_terror = Magic_Item('Ivory Goat (Terror)', 20000, 169, 'Rare')
+ivory_goat_travail = Magic_Item("Ivory Goat (Travail)", 400, 169, "Rare")
+golden_lion = Magic_Item("Golden Lion (Each)", 600, 169, "Rare")
+ivory_goat_traveling = Magic_Item("Ivory Goat (Traveling)", 1000, 169, "Rare")
+staff_of_the_python = Magic_Item("Staff of the Python", 2000, 204, "Uncommon")
+onyx_dog = Magic_Item("Onyx Dog", 3000, 170, "Rare")
+silver_raven = Magic_Item("Silver Raven", 5000, 170, "Uncommon")
+silver_horn_of_valhalla = Magic_Item("Silver Horn of Valhalla", 5600, 175, "Rare")
+marble_elephant = Magic_Item("Marble Elephant", 6000, 170, "Rare")
+bowl_of_commanding_water_elementals = Magic_Item(
+    "Bowl of Commanding Water Elementals", 8000, 156, "Rare"
+)
+brazier_of_commanding_fire_elementals = Magic_Item(
+    "Brazier of Commanding Fire Elementals", 8000, 156, "Rare"
+)
+censer_of_controlling_air_elementals = Magic_Item(
+    "Censer of Controlling Air Elementals", 8000, 158, "Rare"
+)
+stone_of_controlling_earth_elmentals = Magic_Item(
+    "Stone of Controlling Earth Elementals", 8000, 175, "Rare"
+)
+brass_horn_of_valhalla = Magic_Item("Brass Horn of Valhalla", 11200, 175, "Very Rare")
+iron_horn_of_valhalla = Magic_Item("Iron Horn of Valhalla", 14000, 175, "Legendary")
+ivory_goat_terror = Magic_Item("Ivory Goat (Terror)", 20000, 169, "Rare")
 
 magic_items = {
-    'consumable': [
+    "consumable": [
         spell_scroll_level_0,
         ammunition_1,
         potion_of_healing,
@@ -186,22 +454,212 @@ magic_items = {
         ioun_stone_greater_absorption,
         rod_of_absorption,
         talisman_of_ultimate_evil,
-        robe_of_useful_items
+        robe_of_useful_items,
     ],
-    'combat': [
-        armor_1,
-        shield_1,
-        weapon_1,
-        armor_2,
-        shield_2,
-        weapon_2,
-        armor_3,
-        shield_3,
-        weapon_3,
+    "combat": [
+        vicious_weapon,
         adamantine_armor,
-        alchemy_jug
+        mithiral_armor,
+        weapon_1,
+        sword_of_life_stealing,
+        ioun_stone_protection,
+        wand_of_the_war_mage_1,
+        bracers_of_archery,
+        circlet_of_blasting,
+        javelin_of_lightning,
+        prayer_bead_smiting,
+        wind_fan,
+        sword_of_sharpness,
+        staff_of_the_adder,
+        dancing_sword,
+        glamoured_studded_leather,
+        pipes_of_the_sewers,
+        prayer_bead_bless,
+        saddle_of_the_cavalier,
+        sword_of_wounding,
+        frost_brand,
+        dagger_of_venom,
+        gloves_of_missile_snaring,
+        ioun_stone_agility,
+        ioun_stone_fortitude,
+        ioun_stone_insight,
+        ioun_stone_intellect,
+        ioun_stone_leadership,
+        ioun_stone_strength,
+        staff_of_withering,
+        cloak_of_protection,
+        oathbow,
+        ring_of_protection,
+        weapon_2,
+        boots_of_speed,
+        dragon_scale_mail,
+        elven_chain,
+        ioun_stone_regeneration,
+        iron_bands_of_bilarro,
+        prayer_bead_curing,
+        rope_of_entanglement,
+        wand_of_enemy_detection,
+        luckstone,
+        wand_of_the_war_mage_2,
+        flame_tongue,
+        periapt_of_wound_closure,
+        ring_of_evasion,
+        ring_of_the_ram,
+        tentacle_rod,
+        animated_shield,
+        armor_of_resistance,
+        arrow_catching_shield,
+        belt_of_dwarvenkind,
+        bracers_of_defence,
+        ioun_stone_reserve,
+        pearl_of_power,
+        pipes_of_haunting,
+        ring_of_resistance,
+        robe_of_scintillating_colors,
+        scimitar_of_speed,
+        shield_of_missile_attraction,
+        giant_slayer,
+        mace_of_smiting,
+        brooch_of_shielding,
+        amulet_of_health,
+        dragon_slayer,
+        gauntlets_of_ogre_power,
+        headband_of_intellect,
+        mace_of_disruption,
+        mace_of_terror,
+        nine_lives_stealer,
+        wand_of_magic_missile,
+        wand_of_web,
+        staff_of_thunder_and_lightning,
+        wand_of_blinding,
+        wand_of_fear,
+        ioun_stone_awareness,
+        rod_of_the_pact_keeper,
+        staff_of_charming,
+        sunblade,
+        staff_of_healing,
+        ring_of_shooting_stars,
+        ioun_stone_mastery,
+        weapon_3,
+        hammer_of_thunderbolts,
+        rod_of_the_pact_keeper_2,
+        staff_of_fire,
+        staff_of_swarming_insects,
+        wand_of_paralysis,
+        ring_of_fire_elemental_command,
+        dwarven_thrower,
+        wand_of_the_war_mage_3,
+        efreeti_chain,
+        ring_of_free_action,
+        sentinel_shield,
+        staff_of_striking,
+        ring_of_spell_storing,
+        vorporal_sword,
+        ring_of_water_elemental_command,
+        rod_of_alertness,
+        staff_of_frost,
+        instrument_of_the_bards_fochulan_bandlore,
+        instrument_of_the_bards_mac_fuirmidh_cittern,
+        rod_of_lordly_might,
+        rod_of_the_pact_keeper_3,
+        instrument_of_the_bards_doss_lute,
+        instrument_of_the_bards_canaith_mandolin,
+        mantle_of_spell_resistance,
+        ring_of_spell_turning,
+        prayer_bead_favor,
+        wand_of_fireballs,
+        wand_of_lightning_bolts,
+        wand_of_polymorph,
+        instrument_of_the_bards_cli_lyre,
+        scarab_of_protection,
+        sword_of_answering,
+        staff_of_the_woodlands,
+        spellguard_shield,
+        cloak_of_displacement,
+        robe_of_stars,
+        weapon_of_warning,
+        prayer_bead_wind_walking,
+        instrument_of_the_bards_anstruth_harp,
+        instrument_of_the_bards_ollamh_harp,
+        prayer_bead_summons,
+        holy_avenger,
     ],
-    'summoning': [
-
-    ]
+    "non_combat": [
+        helm_of_comprehend_languages,
+        driftglobe,
+        trident_of_fish_command,
+        cap_of_water_breathing,
+        eversmoking_bottle,
+        quiver_of_ehlonna,
+        ioun_stone_sustenance,
+        ring_of_warmth,
+        goggles_of_night,
+        horseshoes_of_the_zephyr,
+        mariners_armor,
+        necklace_of_adaptation,
+        ring_of_water_walking,
+        wand_of_magic_detection,
+        wand_of_secrets,
+        gloves_of_swimming_and_climbing,
+        hewards_handy_haversack,
+        rope_of_climbing,
+        ring_of_feather_falling,
+        boots_of_elvenking,
+        eyes_of_minute_seeing,
+        eyes_of_the_eagle,
+        ring_of_jumping,
+        dimensional_shackles,
+        eyes_of_charming,
+        medallion_of_thoughts,
+        ring_of_swimming,
+        bag_of_holding,
+        boots_of_levitation,
+        ring_of_animal_influence,
+        boots_of_striding_and_springing,
+        cloak_of_arachnida,
+        cloak_of_elvenking,
+        gloves_of_thievery,
+        hat_of_disguise,
+        horseshoes_of_speed,
+        immovable_rod,
+        lantern_of_revealing,
+        periapt_of_health,
+        periapt_of_proof_against_poison,
+        slippers_of_spider_climbing,
+        cloak_of_the_bat,
+        cloak_of_the_manta_ray,
+        ring_of_x_ray_vision,
+        cape_of_the_mountebank,
+        portable_hole,
+        apparatus_of_kwalish,
+        boots_of_the_winterlands,
+        folding_boat,
+        ring_of_invisibility,
+        helm_of_telepathy,
+        cube_of_force,
+        ring_of_mind_shielding,
+        rod_of_rulership,
+        mirror_of_life_trapping,
+        amulet_of_proof_against_detection_and_location,
+        robe_of_eyes,
+        gem_of_seeing,
+        plate_armor_of_etherealness,
+    ],
+    "summoning": [
+        ivory_goat_travail,
+        golden_lion,
+        ivory_goat_traveling,
+        staff_of_the_python,
+        onyx_dog,
+        silver_raven,
+        silver_horn_of_valhalla,
+        marble_elephant,
+        bowl_of_commanding_water_elementals,
+        brazier_of_commanding_fire_elementals,
+        censer_of_controlling_air_elementals,
+        stone_of_controlling_earth_elmentals,
+        brass_horn_of_valhalla,
+        iron_horn_of_valhalla,
+        ivory_goat_terror,
+    ],
 }
