@@ -7,7 +7,7 @@ def randomized_loot_by_rarity(num_of_items, rarity, item_type):
     item_type_filter = []
     if item_type != "":
         for item in magic_items:
-            if item.item_type == 'item_type':
+            if item.item_type.lower() == item_type.lower():
                 item_type_filter.append(item)
     else:
         item_type_filter = magic_items
