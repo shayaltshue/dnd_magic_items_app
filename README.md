@@ -17,3 +17,4 @@ Using the PDF of sanely priced magical items, I wanted to make an application th
 ## What's Next for this Project?
 1. A website to make the application more usable and visually appealing.
 2. A scroll generator/weapon generator. At the moment these are unspecified within the application.
+3. Integration with the tables found in the Dungeon Master's Guide so there is a smooth transition from player's rolling dice to figuring out what loot is generated.
